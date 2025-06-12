@@ -237,7 +237,9 @@ namespace StartbitV2 {
         //% block="180"
         range1 = 180,
         //% block="270"
-        range2 =270
+        range2 = 270,
+        //% block="280"
+        range2 =280
     }
 	
     export enum startbit_digitaltubePort {
@@ -472,10 +474,10 @@ namespace StartbitV2 {
     }
 
     /**
-    * Set the angle of servo 1 to 8, range of 0~270 degree
+    * Set the angle of servo 1 to 8
     */
     //% weight=100 blockId=setServo block="Set pwm servo range %range|index %index|angle %angle|duration %duration"
-    //% angle.min=0 angle.max=270
+    //% angle.min=0 angle.max=360
     //% inlineInputMode=inline
     //% subcategory=Servo/Motor
     export function setPwmServo(range:startbit_servorange, index: number = 1, angle: number, duration: number = 300) {
